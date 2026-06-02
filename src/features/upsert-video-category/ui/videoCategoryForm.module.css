@@ -1,0 +1,59 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.headerRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.categories {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.categoryButton {
+  border: 1px solid #d0d5db;
+  background: #fff;
+  border-radius: 6px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.categoryButtonActive {
+  border-color: #0f3d9e;
+  box-shadow: 0 0 0 1px #0f3d9e;
+}
+
+.empty {
+  color: #5a6169;
+  font-size: 13px;
+}
+label,input  {   
+   margin-right: 10px;
+}
+.actionButton {
+  border: 1px solid #d0d5db;
+  background: #b9b5b5;
+  border-radius: 4px;
+  width: 120px;
+  margin-left: 15px;
+}
+
+

@@ -1,0 +1,77 @@
+.App {
+    height: 100%;
+    display: flex;
+    position: relative;
+    text-align: center;
+}
+
+.App_logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App_logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.Appheader {
+    /* background-color: var(--background-primary);; */
+    background-color: red;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: var(--accent);
+}
+.header {
+    /* background-color: var(--background-primary);; */
+    background-color: red;
+}
+
+.App-link {
+    color: var(--link-color);
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+:root {
+    /* light theme tokens */
+    --background-primary-light: 44, 191, 170;
+    --accent-light: 37, 89, 88;
+  
+    /* dark theme tokens */
+    --background-primary-dark: 25, 48, 66;
+    --accent-dark: 90, 182, 204;
+  }
+  
+  /* map tokens to proper theme */
+  html[data-theme='light'] {
+    --background-primary: #d4b6cf;
+    --accent:  #041d25;
+    --link-color:  #61dafb;
+  }
+  
+  html[data-theme='dark'] {
+    --background-primary: #290404;
+    --accent: #e0e8db;
+    --link-color:  #05161b;
+  }
+
+  .buttonGroup {
+    display: flex;
+    flex-direction: row;
+    padding: 15px 5px;
+
+  }

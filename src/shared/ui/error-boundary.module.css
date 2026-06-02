@@ -1,0 +1,65 @@
+.errorBoundary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  padding: 20px;
+}
+
+.errorCard {
+  max-width: 600px;
+  width: 100%;
+}
+
+.errorContent {
+  padding: 24px;
+  text-align: center;
+}
+
+.errorTitle {
+  display: block;
+  margin-bottom: 16px;
+  color: #d13438;
+}
+
+.errorMessage {
+  display: block;
+  margin-bottom: 24px;
+  color: #605e5c;
+  line-height: 1.5;
+}
+
+.errorDetails {
+  margin: 24px 0;
+  text-align: left;
+  background: #f3f2f1;
+  border-radius: 4px;
+  padding: 12px;
+}
+
+.errorDetails summary {
+  cursor: pointer;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #323130;
+}
+
+.errorStack {
+  background: #1e1e1e;
+  color: #d4d4d4;
+  padding: 12px;
+  border-radius: 4px;
+  overflow-x: auto;
+  font-size: 12px;
+  line-height: 1.5;
+  margin-top: 8px;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+.errorActions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 24px;
+}

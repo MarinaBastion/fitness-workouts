@@ -1,0 +1,83 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.title {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.searchInput {
+  width: 100%;
+  max-width: 420px;
+  padding: 10px 12px;
+  border: 1px solid #d3d7dd;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #222;
+  font-size: 14px;
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: #2f7df4;
+  box-shadow: 0 0 0 2px rgba(47, 125, 244, 0.15);
+}
+
+.chipsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px 6px 8px;
+  border: 1px solid #d7dbe1;
+  border-radius: 999px;
+  background: #f8f9fb;
+  cursor: pointer;
+  color: #1f2328;
+}
+
+.check {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid #d3d7dd;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+  flex-shrink: 0;
+}
+
+.checkActive {
+  border-color: #2f7df4;
+  background: #2f7df4;
+}
+
+.label {
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 600;
+}
+
+.state {
+  color: #626b76;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .label {
+    font-size: 16px;
+  }
+}

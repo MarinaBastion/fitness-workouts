@@ -1,0 +1,1 @@
+export {VideoCategory} from "./model/type";
